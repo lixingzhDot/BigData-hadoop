@@ -48,6 +48,7 @@ public class WordCount {
 	}
 
 	public static void main(String[] args) throws Exception{
+		// commit test
 		Configuration config = new Configuration();
 		Job job = new Job(config, "word count");
 
