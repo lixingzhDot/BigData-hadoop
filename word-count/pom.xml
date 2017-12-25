@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.lixingzh.hadoop.mapreduce</groupId>
+    <artifactId>hadoop-mapreduce</artifactId>
+    <version>0.1</version>
+    <relativePath>../hadoop-mapreduce</relativePath>
+  </parent>
+  <groupId>com.lixingzh.hadoop.mapreduce.wordcount</groupId>
+  <artifactId>word-count</artifactId>
+  <version>0.1</version>
+  <packaging>jar</packaging>
+  <name>word count mapreduce</name>
+  <description>summarize the number of words occurs in file(s)</description>
+  
+  <properties>
+  	<hadoop.core.version>1.2.1</hadoop.core.version>
+  	<hadoop.common.version>2.9.0</hadoop.common.version>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+  	  <artifactId>hadoop-core</artifactId>
+  	  <groupId>org.apache.hadoop</groupId>
+  	  <version>${hadoop.core.version}</version>
+  	</dependency>
+  	<dependency>
+  	  <artifactId>hadoop-common</artifactId>
+  	  <groupId>org.apache.hadoop</groupId>
+  	  <version>${hadoop.common.version}</version>
+  	</dependency>
+  </dependencies>
+  
+  <build>
+  	<finalName>WordCount</finalName>
+  </build>
+</project>
